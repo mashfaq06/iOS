@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2BBDFD21B43BA700D12265 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BBDFC21B43BA700D12265 /* PeripheralTableViewCell.swift */; };
+		FC43627B21AFF9950042371E /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC43627A21AFF9950042371E /* ConnectionViewController.swift */; };
 		FCB232072164E65300D243B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB232062164E65300D243B8 /* AppDelegate.swift */; };
 		FCB232092164E65300D243B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB232082164E65300D243B8 /* ViewController.swift */; };
 		FCB2320C2164E65300D243B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB2320A2164E65300D243B8 /* Main.storyboard */; };
 		FCB2320E2164E65500D243B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB2320D2164E65500D243B8 /* Assets.xcassets */; };
 		FCB232112164E65500D243B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB2320F2164E65500D243B8 /* LaunchScreen.storyboard */; };
+		FCB2321B2164E89700D243B8 /* Peripheral_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2321A2164E89700D243B8 /* Peripheral_List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC2BBDFC21B43BA700D12265 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		FC43627A21AFF9950042371E /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		FCB232032164E65300D243B8 /* BLEProject_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEProject_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB232062164E65300D243B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB232082164E65300D243B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FCB2320D2164E65500D243B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB232102164E65500D243B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB232122164E65500D243B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB2321A2164E89700D243B8 /* Peripheral_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral_List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				FCB2320D2164E65500D243B8 /* Assets.xcassets */,
 				FCB2320F2164E65500D243B8 /* LaunchScreen.storyboard */,
 				FCB232122164E65500D243B8 /* Info.plist */,
+				FCB2321A2164E89700D243B8 /* Peripheral_List.swift */,
+				FC43627A21AFF9950042371E /* ConnectionViewController.swift */,
+				FC2BBDFC21B43BA700D12265 /* PeripheralTableViewCell.swift */,
 			);
 			path = BLEProject_2;
 			sourceTree = "<group>";
@@ -96,6 +105,11 @@
 				TargetAttributes = {
 					FCB232022164E65300D243B8 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC43627B21AFF9950042371E /* ConnectionViewController.swift in Sources */,
 				FCB232092164E65300D243B8 /* ViewController.swift in Sources */,
 				FCB232072164E65300D243B8 /* AppDelegate.swift in Sources */,
+				FCB2321B2164E89700D243B8 /* Peripheral_List.swift in Sources */,
+				FC2BBDFD21B43BA700D12265 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

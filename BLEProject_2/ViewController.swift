@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class ViewController: UIViewController {
+    
+    var centralManager: CBCentralManager!
+    
+    @IBOutlet weak var bluetoothState: UILabel!
 
+    
+    @IBAction func Scanbutton(_ sender: Any)
+    {
+        let peripheralList = self.storyboard?.instantiateViewController(withIdentifier: "ConnectionViewController") as! ConnectionViewController
+        self.navigationController?.pushViewController(peripheralList, animated: true)
+    }
+    
     override func viewDidLoad() {
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
 }
+
 
